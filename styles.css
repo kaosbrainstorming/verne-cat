@@ -73,3 +73,35 @@ footer{background:#d5eaf5;color:#3c6277}.footer-name{font:800 13px 'Manrope',san
 .lang-switch a:hover{border-color:#008c9a}
 @media(max-width:900px){.lang-switch{margin-left:0}}
 @media(max-width:620px){.lang-switch{font-size:11px}.lang-switch a{padding:6px 7px}}
+
+/* V9.1: mejora visual del selector de idiomas */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.lang-switch a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .lang-switch {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .lang-switch {
+        gap: 8px;
+    }
+
+    .lang-switch a {
+        padding: 6px 9px;
+    }
+}
+
