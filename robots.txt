@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.verne.cat/sitemap.xml

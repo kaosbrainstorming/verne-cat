@@ -1,0 +1,8 @@
+VERNE ENGINEERING V9 - INTERNATIONAL SEO
+
+Sube a la raíz del repositorio todos los archivos y la carpeta en/ conservando su estructura. No borres CNAME ni el archivo google de verificación.
+
+ES: https://www.verne.cat/ y /contactos.html
+EN: https://www.verne.cat/en/ y /en/contact.html
+
+Tras publicar, comprueba el selector ES/EN, la página de contacto y el sitemap. Search Console: vuelve a enviar sitemap.xml si es necesario.

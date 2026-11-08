@@ -65,3 +65,11 @@ footer{background:#d5eaf5;color:#3c6277}.footer-name{font:800 13px 'Manrope',san
 .footer-inner .brand-engineer{color:#164c6b}
 .footer-inner .brand-ing{color:#008c9a}
 @media(max-width:620px){.brand-subtitle{font-size:clamp(15px,4.1vw,19px)}.footer-brand .brand-logo{width:90px}.footer-brand .brand-subtitle{font-size:17px}}
+
+/* V9: selector bilingüe ES / EN */
+.lang-switch{display:inline-flex;gap:5px;align-items:center;white-space:nowrap;font:700 12px/1.2 'Manrope',Arial,sans-serif;letter-spacing:.05em;margin-left:auto}
+.lang-switch a{color:#315f78;text-decoration:none;border:1px solid #b8d6e4;border-radius:5px;padding:8px 9px}
+.lang-switch a[aria-current="page"]{background:#164c6b;color:#fff;border-color:#164c6b}
+.lang-switch a:hover{border-color:#008c9a}
+@media(max-width:900px){.lang-switch{margin-left:0}}
+@media(max-width:620px){.lang-switch{font-size:11px}.lang-switch a{padding:6px 7px}}
