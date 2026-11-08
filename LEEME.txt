@@ -1,0 +1,5 @@
+Verne Engineering — V7
+
+Cambios: tipografía ENGINEERING redondeada próxima al logotipo (Comfortaa con alternativas), colores ENGINEER/ING, logotipo y nombre en el pie de ambas páginas, y retirada de ENGINEERING / CONTACT de la página de contactos.
+
+Abre index.html y contactos.html en el navegador. La web pública no se modifica automáticamente.
