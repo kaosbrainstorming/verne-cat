@@ -172,6 +172,7 @@ nav a[aria-current] {
 
 /* Simbolo original de Verne */
 
+
 .hero::before {
     content: "";
     position: absolute;
@@ -179,9 +180,9 @@ nav a[aria-current] {
     pointer-events: none;
 
     top: 50%;
-    right: -17%;
-    width: min(68vw, 980px);
-    height: 650px;
+    right: -12%;
+    width: min(90vw, 1250px);
+    height: 850px;
 
     transform: translateY(-50%);
 
@@ -192,6 +193,7 @@ nav a[aria-current] {
 
     opacity: .055;
 }
+
 
 .hero-grid {
     display: block;
