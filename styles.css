@@ -173,6 +173,7 @@ nav a[aria-current] {
 /* Simbolo original de Verne */
 
 
+
 .hero::before {
     content: "";
     position: absolute;
@@ -180,18 +181,19 @@ nav a[aria-current] {
     pointer-events: none;
 
     top: 50%;
-    right: -12%;
-    width: min(90vw, 1250px);
-    height: 850px;
+    right: -15%;
+
+    width: 1150px;
+    height: 1150px;
 
     transform: translateY(-50%);
 
     background-image: url("verne-simbolo-transparente.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 100% auto;
 
-    opacity: .055;
+    opacity: 0.055;
 }
 
 
