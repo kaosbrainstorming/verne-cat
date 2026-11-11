@@ -1,13 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
-/* =========================================
-   VERNE ENGINEERING - V11
-   ========================================= */
+/* ==========================================
+   VERNE ENGINEERING
+   VERSION V11.2
+   ========================================== */
 
 :root {
-    --navy: #164c6b;
-    --navy2: #123b55;
+    --navy: #163c57;
+    --navy2: #164c6b;
     --teal: #008c9a;
     --ink: #243b4c;
     --muted: #647587;
@@ -25,9 +26,9 @@ html {
 
 body {
     margin: 0;
-    font-family: 'DM Sans', Arial, sans-serif;
-    color: var(--ink);
     background: #fff;
+    color: var(--ink);
+    font-family: 'DM Sans', Arial, sans-serif;
 }
 
 a {
@@ -49,15 +50,13 @@ h1, h2, h3 {
     margin-right: auto;
 }
 
-/* =========================================
-   CABECERA Y LOGOTIPO
-   ========================================= */
+/* CABECERA */
 
 .header {
-    background: #fff;
-    border-bottom: 1px solid var(--line);
     position: relative;
-    z-index: 10;
+    z-index: 20;
+    background: #fff;
+    border-bottom: 1px solid #edf1f4;
 }
 
 .nav {
@@ -65,7 +64,7 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 22px;
 }
 
 .brand {
@@ -100,7 +99,7 @@ h1, h2, h3 {
 }
 
 .brand-ing {
-    color: #008c9a;
+    color: var(--teal);
 }
 
 nav {
@@ -117,9 +116,9 @@ nav a[aria-current] {
 }
 
 .nav-cta {
+    padding: 13px 21px;
     background: var(--teal);
     color: white;
-    padding: 13px 21px;
     font-size: 13px;
     font-weight: 700;
     white-space: nowrap;
@@ -129,7 +128,7 @@ nav a[aria-current] {
     background: #087580;
 }
 
-/* Selector ES / EN */
+/* IDIOMAS */
 
 .lang-switch {
     display: inline-flex;
@@ -142,48 +141,47 @@ nav a[aria-current] {
 
 .lang-switch a {
     display: inline-block;
+    padding: 8px 12px;
     color: #315f78;
     border: 1px solid #b8d6e4;
     border-radius: 5px;
-    padding: 8px 12px;
     text-align: center;
 }
 
 .lang-switch a[aria-current="page"] {
-    background: #164c6b;
-    color: white;
-    border-color: #164c6b;
+    background: var(--navy2);
+    color: #fff;
+    border-color: var(--navy2);
 }
 
 .lang-switch a:hover {
     border-color: var(--teal);
 }
 
-/* =========================================
-   PORTADA V11
-   ========================================= */
+/* ==========================================
+   PORTADA BLANCA
+   ========================================== */
 
-.verne-v11 .hero {
+.hero {
     position: relative;
     isolation: isolate;
     overflow: hidden;
     background: #fff;
-    color: var(--navy2);
+    color: var(--navy);
 }
 
-/* Símbolo decorativo original */
+/* Simbolo original de Verne */
 
-.verne-v11 .hero::before {
+.hero::before {
     content: "";
     position: absolute;
     z-index: -1;
     pointer-events: none;
 
-    width: min(80vw, 1250px);
-    height: 850px;
-
-    top: 48%;
-    right: -15%;
+    top: 50%;
+    right: -17%;
+    width: min(68vw, 980px);
+    height: 650px;
 
     transform: translateY(-50%);
 
@@ -192,19 +190,19 @@ nav a[aria-current] {
     background-position: center;
     background-size: contain;
 
-    opacity: .09;
+    opacity: .055;
 }
 
-.verne-v11 .hero-grid {
+.hero-grid {
     display: block;
     position: relative;
-    min-height: 620px;
+    min-height: 600px;
 }
 
-.verne-v11 .hero-copy {
+.hero-copy {
     position: relative;
-    max-width: 860px;
-    padding: 105px 0 95px;
+    max-width: 790px;
+    padding: 105px 0 90px;
 
     display: flex;
     flex-direction: column;
@@ -218,11 +216,11 @@ nav a[aria-current] {
     text-transform: uppercase;
 }
 
-.verne-v11 .eyebrow {
+.eyebrow {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #44738b;
+    color: #52768a;
 }
 
 .dot {
@@ -233,28 +231,27 @@ nav a[aria-current] {
     border-radius: 50%;
 }
 
-.verne-v11 h1 {
-    max-width: 850px;
-    margin: 26px 0 28px;
+.hero h1 {
+    max-width: 790px;
+    margin: 28px 0;
+    color: var(--navy);
 
-    font-size: clamp(42px, 4.3vw, 66px);
+    font-size: clamp(40px, 4.2vw, 64px);
     font-weight: 800;
-    line-height: 1.15;
+    line-height: 1.16;
     letter-spacing: -.055em;
-
-    color: #163c57;
 }
 
-.verne-v11 h1 em {
-    font-style: normal;
+.hero h1 em {
     color: var(--teal);
+    font-style: normal;
 }
 
-.verne-v11 .lead {
-    max-width: 670px;
+.lead {
+    max-width: 650px;
+    color: #60798a;
     font-size: 17px;
     line-height: 1.85;
-    color: #536f81;
 }
 
 .actions {
@@ -269,11 +266,9 @@ nav a[aria-current] {
     align-items: center;
     justify-content: space-between;
     gap: 32px;
-
     padding: 17px 24px;
     font-size: 13px;
     font-weight: 700;
-
     transition: background .2s;
 }
 
@@ -286,12 +281,12 @@ nav a[aria-current] {
     background: #087580;
 }
 
-.verne-v11 .secondary {
-    border: 1px solid #91b6c8;
+.secondary {
     color: #245d79;
+    border: 1px solid #a5c3d2;
 }
 
-.verne-v11 .secondary:hover {
+.secondary:hover {
     background: #eaf5fa;
 }
 
@@ -299,29 +294,28 @@ nav a[aria-current] {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-top: 42px;
+    margin-top: 44px;
     padding-top: 20px;
-
+    color: #7892a0;
     font-size: 10px;
     letter-spacing: .15em;
-    color: #718fa1;
 }
 
 .hero-foot .line {
     width: 72px;
     height: 1px;
-    background: #9bbbc9;
+    background: #a8c0cc;
 }
 
-/* =========================================
-   PRESENTACIÓN
-   ========================================= */
+/* ==========================================
+   QUE HACEMOS
+   ========================================== */
 
 .intro {
-    padding: 100px 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 40px;
+    padding: 100px 0;
 }
 
 .section-label {
@@ -344,23 +338,80 @@ nav a[aria-current] {
 
 .intro p:not(.section-label) {
     max-width: 720px;
+    color: var(--muted);
     font-size: 17px;
     line-height: 1.9;
-    color: #647587;
 }
 
 .intro strong {
     color: #205c79;
-    font-weight: 700;
 }
 
-/* =========================================
+/* Nueva seccion de tres pilares */
+
+.pillars-section {
+    background: var(--light);
+    padding: 85px 0 95px;
+}
+
+.pillars-heading {
+    max-width: 760px;
+    margin-bottom: 45px;
+}
+
+.pillars-heading h2 {
+    color: var(--navy);
+    font-size: clamp(32px, 3.4vw, 48px);
+    letter-spacing: -.05em;
+    line-height: 1.2;
+}
+
+.pillars-heading p:not(.section-label) {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.pillar {
+    padding: 28px 0;
+    border-top: 2px solid #b8d6e4;
+}
+
+.pillar-number {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--teal);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.pillar h3 {
+    margin-bottom: 14px;
+    color: var(--navy);
+    font-size: 24px;
+    letter-spacing: -.04em;
+}
+
+.pillar p {
+    max-width: 340px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ==========================================
    SERVICIOS
-   ========================================= */
+   ========================================== */
 
 .services {
-    position: relative;
-    background: #eaf5fa;
+    background: #f0f7fa;
     padding: 95px 0 105px;
 }
 
@@ -374,13 +425,14 @@ nav a[aria-current] {
 
 .section-top h2 {
     margin: 14px 0 0;
+    color: var(--navy);
 }
 
 .section-top > p {
     max-width: 280px;
+    color: var(--muted);
     font-size: 14px;
     line-height: 1.7;
-    color: var(--muted);
 }
 
 .accent {
@@ -397,10 +449,8 @@ nav a[aria-current] {
     position: relative;
     min-height: 270px;
     padding: 35px 30px 38px;
-
-    background: #fff;
+    background: white;
     border: 1px solid #dceaf0;
-
     transition: transform .2s, box-shadow .2s;
 }
 
@@ -411,34 +461,35 @@ nav a[aria-current] {
 
 .service-no {
     position: absolute;
-    right: 25px;
     top: 25px;
-    font-size: 11px;
+    right: 25px;
     color: #9badb8;
+    font-size: 11px;
 }
 
 .service-icon {
     height: 60px;
-    font-size: 35px;
     color: var(--teal);
+    font-size: 35px;
 }
 
 .service h3 {
     margin: 12px 0;
+    color: var(--navy);
     font-size: 20px;
     letter-spacing: -.04em;
 }
 
 .service p {
     margin: 0;
+    color: var(--muted);
     font-size: 14px;
     line-height: 1.75;
-    color: var(--muted);
 }
 
-/* =========================================
-   FILOSOFÍA
-   ========================================= */
+/* ==========================================
+   ENFOQUE
+   ========================================== */
 
 .approach {
     display: block;
@@ -453,13 +504,14 @@ nav a[aria-current] {
 
 .approach-copy h2 {
     max-width: 740px;
+    color: var(--navy);
 }
 
 .approach-copy > p:not(.section-label) {
     max-width: 760px;
+    color: var(--muted);
     font-size: 16px;
     line-height: 1.9;
-    color: var(--muted);
 }
 
 .principles {
@@ -480,9 +532,9 @@ nav a[aria-current] {
     color: var(--teal);
 }
 
-/* =========================================
+/* ==========================================
    CONTACTO DESTACADO
-   ========================================= */
+   ========================================== */
 
 .contact-banner {
     background: #087f94;
@@ -518,9 +570,9 @@ nav a[aria-current] {
     background: #e4f6f7;
 }
 
-/* =========================================
-   PIE DE PÁGINA
-   ========================================= */
+/* ==========================================
+   PIE DE PAGINA
+   ========================================== */
 
 footer {
     background: #eaf5fa;
@@ -551,14 +603,14 @@ footer {
 }
 
 .footer-name {
+    color: #24536f;
     font: 800 13px 'Manrope', sans-serif;
     letter-spacing: .14em;
-    color: #24536f;
 }
 
-/* =========================================
-   PÁGINAS DE CONTACTO EXISTENTES
-   ========================================= */
+/* ==========================================
+   PAGINAS DE CONTACTO
+   ========================================== */
 
 .contact-page {
     min-height: calc(100vh - 213px);
@@ -576,21 +628,16 @@ footer {
 }
 
 .contact-page h1 em {
-    font-style: normal;
     color: var(--teal);
+    font-style: normal;
 }
 
 .contact-page .eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 12px;
     color: #396c87;
 }
 
 .contact-page .lead {
     max-width: 680px;
-    font-size: 17px;
-    line-height: 1.85;
     color: #41667c;
 }
 
@@ -598,7 +645,7 @@ footer {
     display: block;
     max-width: 850px;
     margin-top: 65px;
-    background: #fff;
+    background: white;
     color: var(--navy);
 }
 
@@ -619,9 +666,9 @@ footer {
 .email-link {
     display: inline-block;
     margin: 18px 0;
+    color: var(--teal);
     font-size: clamp(18px, 2.3vw, 28px);
     font-weight: 800;
-    color: var(--teal);
 }
 
 .contact-panel .note {
@@ -645,34 +692,28 @@ footer {
 }
 
 .contact-graphic span {
-    font: 800 140px 'Manrope', sans-serif;
     color: #14364d;
+    font: 800 140px 'Manrope', sans-serif;
 }
 
 .contact-graphic small {
+    color: #688190;
     font-size: 10px;
     letter-spacing: .22em;
-    color: #688190;
 }
 
 .contact-symbol {
-    font: 800 145px 'Manrope', sans-serif;
     color: #80b6cf;
+    font: 800 145px 'Manrope', sans-serif;
     line-height: 1;
 }
 
-/* Elementos gráficos heredados */
+/* Compatibilidad con elementos anteriores */
 
 .hero-art {
     position: relative;
     overflow: hidden;
     min-height: 520px;
-    background: radial-gradient(
-        circle at 52% 50%,
-        #c7e5f3 0%,
-        #a9d3e8 55%,
-        #83bad5 100%
-    );
 }
 
 .gridlines,
@@ -712,7 +753,6 @@ footer {
     width: 480px;
     height: 170px;
     transform: translate(-50%, -50%) rotate(-37deg);
-    border-color: #187e9a88;
 }
 
 .axis {
@@ -720,19 +760,16 @@ footer {
     left: 50%;
     top: 50%;
     background: #2c7a9b55;
-    transform-origin: center;
 }
 
 .axis-a {
     width: 1px;
     height: 650px;
-    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .axis-b {
     width: 650px;
     height: 1px;
-    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .core {
@@ -740,9 +777,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font: 800 200px 'Manrope', sans-serif;
     color: #e8f7ff;
-    text-shadow: 9px 9px 0 #3489ac70;
+    font: 800 200px 'Manrope', sans-serif;
 }
 
 .core-logo {
@@ -752,7 +788,7 @@ footer {
     transform: translate(-50%, -50%);
     width: min(85%, 420px);
     padding: 24px;
-    background: #fff;
+    background: white;
 }
 
 .core-logo img {
@@ -788,15 +824,14 @@ footer {
 
 .approach-visual {
     height: 460px;
-    background: var(--navy);
     padding: 30px;
+    background: var(--navy);
 }
 
 .blueprint {
     position: relative;
     height: 100%;
     overflow: hidden;
-    border: 1px solid #ffffff20;
 }
 
 .bp-circle {
@@ -834,24 +869,24 @@ footer {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    font-size: 10px;
     color: #a7c7d3;
+    font-size: 10px;
     letter-spacing: .15em;
 }
 
-/* Accesibilidad */
+/* ACCESIBILIDAD */
 
 .brand:focus-visible,
-.nav a:focus-visible,
+nav a:focus-visible,
 .btn:focus-visible,
 .lang-switch a:focus-visible {
     outline: 3px solid var(--teal);
     outline-offset: 4px;
 }
 
-/* =========================================
+/* ==========================================
    TABLET
-   ========================================= */
+   ========================================== */
 
 @media (max-width: 900px) {
 
@@ -883,21 +918,25 @@ footer {
         margin-left: 0;
     }
 
-    .verne-v11 .hero-copy {
+    .hero-copy {
         padding: 80px 0 75px;
     }
 
-    .verne-v11 .hero::before {
-        width: 95vw;
-        height: 650px;
+    .hero::before {
+        width: 80vw;
+        height: 550px;
         right: -30%;
-        opacity: .065;
+        opacity: .045;
     }
 
     .intro {
         grid-template-columns: 1fr;
         gap: 10px;
         padding: 70px 0;
+    }
+
+    .pillars-grid {
+        gap: 18px;
     }
 
     .service-grid {
@@ -913,9 +952,9 @@ footer {
     }
 }
 
-/* =========================================
-   MÓVIL
-   ========================================= */
+/* ==========================================
+   MOVIL
+   ========================================== */
 
 @media (max-width: 620px) {
 
@@ -924,7 +963,6 @@ footer {
     }
 
     .nav {
-        height: auto;
         min-height: 78px;
         flex-wrap: wrap;
         padding: 14px 0;
@@ -941,7 +979,6 @@ footer {
 
     .brand-subtitle {
         font-size: clamp(15px, 4.1vw, 19px);
-        letter-spacing: -.02em;
     }
 
     nav {
@@ -961,32 +998,28 @@ footer {
         padding: 6px 9px;
     }
 
-    .verne-v11 .hero-grid {
+    .hero-grid {
         min-height: 0;
     }
 
-    .verne-v11 .hero-copy {
+    .hero-copy {
         padding: 70px 0 65px;
     }
 
-    .verne-v11 h1 {
+    .hero h1 {
         font-size: clamp(37px, 9vw, 52px);
     }
 
-    .verne-v11 .lead {
+    .lead {
         font-size: 16px;
     }
 
-    .verne-v11 .hero::before {
-        width: 125vw;
-        height: 440px;
+    .hero::before {
+        width: 105vw;
+        height: 400px;
         top: 50%;
-        right: -55%;
-        opacity: .045;
-    }
-
-    .actions {
-        flex-wrap: wrap;
+        right: -60%;
+        opacity: .035;
     }
 
     .hero-foot {
@@ -995,6 +1028,19 @@ footer {
 
     .intro {
         padding: 65px 0;
+    }
+
+    .pillars-section {
+        padding: 65px 0;
+    }
+
+    .pillars-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .pillar {
+        padding: 20px 0;
     }
 
     .services {
