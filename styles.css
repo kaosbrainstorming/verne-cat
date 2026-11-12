@@ -182,10 +182,10 @@ nav a[aria-current] {
     pointer-events: none;
 
     top: 50%;
-    right: -20%;
+    right: -18%;
 
-    width: 1700px;
-    height: 1500px;
+    width: 1450px;
+    height: 1350px;
 
     transform: translateY(-50%);
 
